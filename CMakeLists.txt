@@ -7,5 +7,5 @@ project(test)
 
 find_package(V8 CONFIG REQUIRED)
 
-add_library(test SHARED main.cpp)
+add_executable(test main.cpp)
 target_link_libraries(test PRIVATE V8::V8)
